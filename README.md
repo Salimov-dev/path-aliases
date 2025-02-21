@@ -1,50 +1,14 @@
-# React + TypeScript + Vite
+В этом видео мы научимся работать с абсолютными путями, они же - Path Aliases, Module Aliases или Absolute Imports. Будем превращать пути типа "../../assets/logo.png" в "@assets/logo.png"
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Видео на ютуб: https://youtu.be/m9N_0qbmtLc
+Мой ТГ: https://t.me/Rogooo
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+00:00 Вступление
+00:40 Инициализация проекта на vite
+01:31 Обсудим проблемы относительных путей
+02:36 Готовим проекта для работы
+07:23 Устанавлиаем path, url и @types/node
+08:20 Работаем с vite.config.ts
+11:40 Работаем с tsconfig.json
+14:41 Применяем новые алиасы в приложении
+16:42 Конец
